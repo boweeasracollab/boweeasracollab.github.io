@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bow'ee And Asra Collab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Gallery Grid -->
+ <div class="gallery-viewport">
+  <div class="gallery-wrapper">
+  <div class="gallery">
+    <!-- Row 1 -->
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/F1_thumb.png" alt="F1" data-full="images/F1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; F1&lt;br&gt;&lt;a href=&quot;https://example.com/F1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/B1_thumb.png" alt="B1" data-full="images/B1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; B1&lt;br&gt;&lt;a href=&quot;https://example.com/B1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/C1_thumb.png" alt="C1" data-full="images/C1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; C1&lt;br&gt;&lt;a href=&quot;https://example.com/C1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/D1_thumb.png" alt="D1" data-full="images/D1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; D1&lt;br&gt;&lt;a href=&quot;https://example.com/D1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/F2_thumb.png" alt="F2" data-full="images/F2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; F2&lt;br&gt;&lt;a href=&quot;https://example.com/F2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+
+    <!-- Row 2 -->
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/A1_thumb.png" alt="A1" data-full="images/A1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; A1&lt;br&gt;&lt;a href=&quot;https://example.com/A1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/B2_thumb.png" alt="B2" data-full="images/B2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; B2&lt;br&gt;&lt;a href=&quot;https://example.com/B2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/C2_thumb.png" alt="C2" data-full="images/C2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; C2&lt;br&gt;&lt;a href=&quot;https://example.com/C2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/D2_thumb.png" alt="D2" data-full="images/D2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; D2&lt;br&gt;&lt;a href=&quot;https://example.com/D2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/E1_thumb.png" alt="E1" data-full="images/E1.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; E1&lt;br&gt;&lt;a href=&quot;https://example.com/E1&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+
+    <!-- Row 3 -->
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/A2_thumb.png" alt="A2" data-full="images/A2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; A2&lt;br&gt;&lt;a href=&quot;https://example.com/A2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/B3_thumb.png" alt="B3" data-full="images/B3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; B3&lt;br&gt;&lt;a href=&quot;https://example.com/B3&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/C3_thumb.png" alt="C3" data-full="images/C3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; C3&lt;br&gt;&lt;a href=&quot;https://example.com/C3&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/D3_thumb.png" alt="D3" data-full="images/D3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; Domantics&lt;br&gt;&lt;strong&gt;TikTok:&lt;/strong&gt; &lt;a href=&quot;https://www.tiktok.com/@domantics&quot; target=&quot;_blank&quot;&gt;https://www.tiktok.com/@domantics&lt;/a&gt;&lt;br&gt;&lt;strong&gt;Instagram:&lt;/strong&gt; &lt;a href=&quot;https://instagram.com/domantics&quot; target=&quot;_blank&quot;&gt;@domantics&lt;/a&gt;&lt;br&gt;&lt;strong&gt;Bluesky:&lt;/strong&gt; &lt;a href=&quot;https://bsky.app/profile/domantics.bsky.social&quot; target=&quot;_blank&quot;&gt;domantics.bsky.social&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/E2_thumb.png" alt="E2" data-full="images/E2.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; E2&lt;br&gt;&lt;a href=&quot;https://example.com/E2&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+
+    <!-- Row 4 -->
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/A3_thumb.png" alt="A3" data-full="images/A3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; Faeore&lt;br&gt;&lt;strong&gt;Website:&lt;/strong&gt; &lt;a href=&quot;https://icephoenix.com&quot; target=&quot;_blank&quot;&gt;icephoenix.com/&lt;/a&gt;&lt;br&gt;&lt;strong&gt;Instagram:&lt;/strong&gt; &lt;a href=&quot;https://instagram.com/icephoenixcom&quot; target=&quot;_blank&quot;&gt;@icephoenixcom&lt;/a&gt;&lt;br&gt;&lt;strong&gt;Bluesky:&lt;/strong&gt; &lt;a href=&quot;https://bsky.app/profile/faeore.bsky.social&quot; target=&quot;_blank&quot;&gt;faeore.bsky.social&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/B4_thumb.png" alt="B4" data-full="images/B4.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; B4&lt;br&gt;&lt;a href=&quot;https://example.com/B4&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/C4_thumb.png" alt="C4" data-full="images/C4.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; C4&lt;br&gt;&lt;a href=&quot;https://example.com/C4&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/D4_thumb.png" alt="D4" data-full="images/D4.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; D4&lt;br&gt;&lt;a href=&quot;https://example.com/D4&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/E3_thumb.png" alt="E3" data-full="images/E3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; E3&lt;br&gt;&lt;a href=&quot;https://example.com/E3&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+
+    <!-- Row 5 -->
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/F3_thumb.png" alt="F3" data-full="images/F3.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; F3&lt;br&gt;&lt;a href=&quot;https://example.com/F3&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/B5_thumb.png" alt="B5" data-full="images/B5.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; B5&lt;br&gt;&lt;a href=&quot;https://example.com/B5&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/C5_thumb.png" alt="C5" data-full="images/C5.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; C5&lt;br&gt;&lt;a href=&quot;https://example.com/C5&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/D5_thumb.png" alt="D5" data-full="images/D5.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; D5&lt;br&gt;&lt;a href=&quot;https://example.com/D5&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+    <div class="gallery-item" onclick="openModal(this)">
+      <img src="images/F4_thumb.png" alt="F4" data-full="images/F4.png" data-text="&lt;strong&gt;Artist:&lt;/strong&gt; F4&lt;br&gt;&lt;a href=&quot;https://example.com/F4&quot; target=&quot;_blank&quot;&gt;View Portfolio&lt;/a&gt;" />
+    </div>
+  </div>
+  </div>
+  </div>
+
+<!-- Modal Overlay -->
+<div id="modal" class="modal">
+  <div class="modal-wrapper">
+    <!-- Left Arrow -->
+    <span class="nav-arrow left-arrow" onclick="navigate(-1)">&#10094;</span>
+
+    <!-- Modal Content -->
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="Full Image" />
+      <div id="modal-text" class="modal-text"></div>
+    </div>
+
+    <!-- Right Arrow -->
+    <span class="nav-arrow right-arrow" onclick="navigate(1)">&#10095;</span>
+  </div>
+
+  <!-- Close Button -->
+  <span class="close" onclick="closeModal()">&times;</span>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
