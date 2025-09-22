@@ -123,7 +123,7 @@ body {
 }
 /* Full-size image */
 .modal-content img {
-  width: 65%;
+  width: 60%;
   height: auto;
   object-fit: contain;
   border-radius: 4px;
@@ -131,7 +131,7 @@ body {
 
 /* Text beside image */
 .modal-text {
-  width: 35%;
+  width: 40%;
   padding-left: 20px;
   font-size: 1.1em;
   color: #fff;
