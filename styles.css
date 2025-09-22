@@ -123,7 +123,7 @@ body {
 }
 /* Full-size image */
 .modal-content img {
-  width: 50%;
+  width: 70%;
   height: auto;
   object-fit: contain;
   border-radius: 4px;
