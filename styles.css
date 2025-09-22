@@ -102,13 +102,13 @@ body {
 
 /* Modal content layout */
 .modal-content {
-  position: relative; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #222;
   border-radius: 8px;
+
   transform: translateY(10px) scale(0.98);
   opacity: 0;
   transition: transform 300ms ease, opacity 300ms ease;
@@ -128,9 +128,7 @@ body {
   object-fit: contain;
   border-radius: 4px;
 }
-#modal-img { 
-  display: block; 
-}
+
 /* Text beside image */
 .modal-text {
   width: 50%;
@@ -225,7 +223,7 @@ a:visited {
     right: -30px;
   }
 }
-/* Spinner style */
+
 .modal-spinner {
   position: absolute;
   width: 32px;
@@ -235,8 +233,10 @@ a:visited {
   border-radius: 50%;
   animation: modal-spin 0.8s linear infinite;
   pointer-events: none;
-  z-index: 2002; 
+  z-index: 2002;
 }
 
 @keyframes modal-spin { to { transform: rotate(360deg); } }
 
+.modal-content { position: relative; }
+#modal-img { display: block; }

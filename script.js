@@ -129,7 +129,7 @@ function applyModalContent({ thumb, full, text, token }) {
     preloadFull(full).then(img => {
       if (token === navSeq) {
         modalImg.src = img.src;
-        hideSpinner();
+        hideSpinner(); 
       }
     }).catch(() => {
       hideSpinner();
@@ -138,6 +138,7 @@ function applyModalContent({ thumb, full, text, token }) {
     hideSpinner();
   }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.gallery-item img').forEach(img => {
     img.setAttribute('loading', 'lazy');
@@ -149,8 +150,16 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.setAttribute('fetchpriority', 'high');
   }
 });
-
-//loading spinner
+function ensureSpinner() {
+  let sp = document.querySelector('.modal-spinner');
+  if (!sp) {
+    sp = document.createElement('div');
+    sp.className = 'modal-spinner';
+    document.querySelector('.modal-content').appendChild(sp);
+  }
+  return sp;
+}
+//spinner
 function positionSpinnerOverImage() {
   const content = document.querySelector('.modal-content');
   const img = document.getElementById('modal-img');
@@ -160,9 +169,9 @@ function positionSpinnerOverImage() {
   const crect = content.getBoundingClientRect();
   const irect = img.getBoundingClientRect();
 
-	//spinner position 
   const cx = irect.left - crect.left + irect.width / 2;
   const cy = irect.top  - crect.top  + irect.height / 2;
+
   sp.style.left = (cx - 16) + 'px';
   sp.style.top  = (cy - 16) + 'px';
 }
@@ -177,6 +186,6 @@ function hideSpinner() {
   const sp = document.querySelector('.modal-spinner');
   if (sp) sp.style.display = 'none';
 }
+
 window.addEventListener('resize', positionSpinnerOverImage);
 document.getElementById('modal-img')?.addEventListener('load', positionSpinnerOverImage);
-
