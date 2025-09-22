@@ -124,11 +124,18 @@ function applyModalContent({ thumb, full, text, token }) {
   modalText.innerHTML = text || '';
 
   if (full) {
+    showSpinner(); 
+
     preloadFull(full).then(img => {
       if (token === navSeq) {
         modalImg.src = img.src;
+        hideSpinner();
       }
-    }).catch(() => {});
+    }).catch(() => {
+      hideSpinner();
+    });
+  } else {
+    hideSpinner();
   }
 }
 document.addEventListener('DOMContentLoaded', () => {
@@ -142,3 +149,34 @@ document.addEventListener('DOMContentLoaded', () => {
     modalImg.setAttribute('fetchpriority', 'high');
   }
 });
+
+//loading spinner
+function positionSpinnerOverImage() {
+  const content = document.querySelector('.modal-content');
+  const img = document.getElementById('modal-img');
+  const sp = document.querySelector('.modal-spinner');
+  if (!content || !img || !sp) return;
+
+  const crect = content.getBoundingClientRect();
+  const irect = img.getBoundingClientRect();
+
+	//spinner position 
+  const cx = irect.left - crect.left + irect.width / 2;
+  const cy = irect.top  - crect.top  + irect.height / 2;
+  sp.style.left = (cx - 16) + 'px';
+  sp.style.top  = (cy - 16) + 'px';
+}
+
+function showSpinner() {
+  const sp = ensureSpinner();
+  sp.style.display = 'block';
+  positionSpinnerOverImage();
+}
+
+function hideSpinner() {
+  const sp = document.querySelector('.modal-spinner');
+  if (sp) sp.style.display = 'none';
+}
+window.addEventListener('resize', positionSpinnerOverImage);
+document.getElementById('modal-img')?.addEventListener('load', positionSpinnerOverImage);
+
