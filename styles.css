@@ -93,6 +93,13 @@ html, body {
   margin: 0;
   cursor: pointer;
 }
+.gallery-item img:hover {
+  transform: scale(1.05);
+  z-index: 500;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
 
 /* vertical adaptation */
 @media (max-width: 1400px), (max-height: 800px) {
